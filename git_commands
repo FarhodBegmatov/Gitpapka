@@ -1,0 +1,41 @@
+1.  apt-get install git == git dasturini o'rnatish
+
+2.  git --version == git versiyasini ko'rish
+
+3.  git config --global user.name "bu yerga foydalanuvchi  ismi yoziladi "
+
+4.  git config --global user.email "123@gmail.com"
+
+5.  git init == joriy papkani ishga tushiradi
+
+6.  git status ==  papaka ichidagi fayllarni ro'yhatga qo'shilgan yoki qo'shilmaganini bildiradi
+
+
+7.  git add 1.txt == fayl ro'yhatga qo'shildi
+
+8.  git add . == bir yo'la papkadagi hamma fayllarni ro'yhatdan o'tkazadi
+
+9.  git commit -m "izoh"
+
+10. git commit -am "izoh2"   == birdaniga add va commit buyrug'i
+
+11. git log == o'zgarishlarni ko'rsatadi
+
+12. git log --author "Abduvohid"  == faqat shu foydalanuvchining o'zgarishlarini ko'rsatadi
+
+13. git log --stat == batafsil malumot beradi
+
+14. git log -1 == oxirgi bitta o'zgarish   yoki  git lig -1 --stat
+
+15. git log -p == yanayam batafsil malumot beradi  => o'zgartirilgan yozuvlarni ham ko'rsatadi
+
+16. git diff == ro'yhatdan o'tgan fayl bilan ro'yhatdan o'tmagan fayl o'rtasidagi farq
+
+17. git diff --staged == add qilingan  va commit qilingan fayl o'rtasidagi farq
+
+18. git checkout -- 1.txt  ==   commit qilingan faylni bitta oldingi holatga qaytaradi
+
+19. git reset HEAD 1-txt == add qilingan faylni ortga qaytaradi
+
+20.       
+       
