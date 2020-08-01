@@ -46,6 +46,9 @@
 22. git remote remove origin
 23. git remote add origin -> githubdagi repository manzili  -> ulandi
 
-24. 
+24. agar git push -u origin master ishlamasa   ->  git push -f origin master  -> ishlaydi
+
+
+ 
        
 
