@@ -48,7 +48,7 @@
 
 24. agar git push -u origin master ishlamasa   ->  git push -f origin master  -> ishlaydi
 
-
+25. 
  
        
 
