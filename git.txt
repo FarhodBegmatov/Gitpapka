@@ -53,5 +53,5 @@ bishqa papka ichida git clone -> githubdagi repository manzili
  
 26. git pull origin master ==  github dagi o'zgarishni local omborga ko'chiradi  
 
-27. malumotlarni githubning o'zidan o'zgartirib keyin pull qilsa ham bo'ladi
+27. malumotlarni githubning o'zidan o'zgartirib keyin pull qilsa ham bo'ladi.
 
