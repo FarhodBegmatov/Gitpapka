@@ -39,6 +39,13 @@
 
 20. git remote add origin -> githubdagi repository manzili
 
-21. git push -u origin master       
+21. git push -u origin master
+
+          boshqa repositoryga ulash
+
+22. git remote remove origin
+23. git remote add origin -> githubdagi repository manzili  -> ulandi
+
+24. 
        
 
