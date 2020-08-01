@@ -37,5 +37,8 @@
 
 19. git reset HEAD 1-txt == add qilingan faylni ortga qaytaradi
 
-20.       
+20. git remote add origin -> githubdagi repository manzili
+
+21. git push -u origin master       
        
+
