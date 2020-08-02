@@ -64,3 +64,11 @@ lekin git diff master origin/master buyrug'i orqali o'zgarishni ko'rsa bo'ladi
        va bu fayl boshqa foydalanuvchilarga jo'natilmaydi git statusda ham ko'rinmaydi
        agar !1.txt deb yozilsa === bu faylni commit qilsa bo'ladi 
          *.txt == barcha txt fayllar statusda chiqmaydi 
+
+31. git branch == barcha tarmoqlar nomlari
+
+32. git branch test ==   test tarmog'i yaratildi
+
+33. git checkout test ==  hozirgi tarmoq testga o'zgardi
+
+34. git checkout -b test2== bir yo'la test2 ga o'zgardi va test2 branch yaratildi
