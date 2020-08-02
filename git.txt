@@ -58,3 +58,9 @@ bishqa papka ichida git clone -> githubdagi repository manzili
 28. git fetch == pull dan farqi bor yani bunda local computerga malumot ulanmaydi 
 lekin git diff master origin/master buyrug'i orqali o'zgarishni ko'rsa bo'ladi
 
+29. git status --untracked-files=all == papkalar ichidagi o'zgarishlarni  ham ko'rsatadi
+
+30. init qilingan papkada .ignore nomli fayl ochiladi va uning ichiga ro'yxatga fayl nomi yoziladi misol uchun 1.txt
+       va bu fayl boshqa foydalanuvchilarga jo'natilmaydi git statusda ham ko'rinmaydi
+       agar !1.txt deb yozilsa === bu faylni commit qilsa bo'ladi 
+         *.txt == barcha txt fayllar statusda chiqmaydi 
