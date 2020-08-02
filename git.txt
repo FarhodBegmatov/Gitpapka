@@ -55,3 +55,6 @@ bishqa papka ichida git clone -> githubdagi repository manzili
 
 27. malumotlarni githubning o'zidan o'zgartirib keyin pull qilsa ham bo'ladi.
 
+28. git fetch == pull dan farqi bor yani bunda local computerga malumot ulanmaydi 
+lekin git diff master origin/master buyrug'i orqali o'zgarishni ko'rsa bo'ladi
+
