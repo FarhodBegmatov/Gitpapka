@@ -78,5 +78,5 @@ lekin git diff master origin/master buyrug'i orqali o'zgarishni ko'rsa bo'ladi
 
 36. git merge test == master tarmog'i test tamog'i bilan birlashtirildi 
 
-37.  
+37. git   
 
