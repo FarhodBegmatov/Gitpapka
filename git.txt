@@ -71,8 +71,12 @@ lekin git diff master origin/master buyrug'i orqali o'zgarishni ko'rsa bo'ladi
 
 33. git checkout test ==  hozirgi tarmoq testga o'zgardi
 
+
 34. git checkout -b test2== bir yo'la test2 ga o'zgardi va test2 branch yaratildi
 
 35 git branch -D test2 == test2 branch o'chirildi
 
-36. 
+36. git merge test == master tarmog'i test tamog'i bilan birlashtirildi 
+
+37.  
+
