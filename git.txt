@@ -1,4 +1,4 @@
-1.  apt-get install git == git dasturini o'rnatish
+1.  apt-get install git == git dasturini o'rnatish.
 
 2.  git --version == git versiyasini ko'rish
 
