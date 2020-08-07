@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>js</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic/bootstrap.min.css">
+  <script src="basic/jquery-3.5.1.min.js"></script>
+  <script src="basic/popper.min.js"></script>
+  <script src="basic/bootstrap.min.js"></script>
+
+  
+ 
+
+</head>
+
+<body>
+  <div class="container text-center mt-5 mb-5">
+<div class="row">
+  <div class="col-3"></div>
+
+<div class="col">
+
+
+
+    <div id="accordion">
+
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne" onclick="a()">
+            <h1>1-misol</h1>
+
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqamlarni kiriting </h3>
+            <input type="number" id="kirit1" placeholder="x=">
+            <input type="number" id="kirit2" placeholder="y=">
+            
+            <br><br>
+            <button class="btn btn-outline-info" onclick="kopay()">ko'paytirish</button>
+            <button class="btn btn-outline-info" onclick="bolin()">bo'lish</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" onclick="a2()">
+            <h1>2-misol</h1>
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqam kiriting</h3><br>
+            <input type="number" placeholder="faqat raqam kiriting" id="kv">
+            <br><br>
+            <button class="btn btn-outline-info" onclick="f2()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" onclick="a3()">
+            <h1>3-misol</h1>
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqam kiriting</h3><br>
+            <input type="text" placeholder="1,2,45,76,3" id="soat">
+            <br><br>
+           
+            <button class="btn btn-outline-info" onclick="f3()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour" onclick="a4()">
+            <h1>4-misol</h1>
+          </a>
+        </div>
+        <div id="collapsefour" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqam kiriting</h3><br>
+            <input type="text" placeholder="raqm kiriting" id="ping">
+            <br><br>
+            <button class="btn btn-outline-info" onclick="misol4()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapse5" onclick="a5()">
+            <h1>5-misol</h1>
+          </a>
+        </div>
+        <div id="collapse5" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqam kiriting</h3><br>
+            <input type="number" placeholder="raqam kiriting" id="oy">
+            <br><br>
+           
+            <button class="btn btn-outline-info" onclick="f5()">natijani ko'rish</button>
+<div id="yulduz" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapse6" onclick="a6()">
+            <h1>6-misol</h1>
+          </a>
+        </div>
+        <div id="collapse6" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Matnni kiriting</h3><br>
+            <input type="text" placeholder="matnni kiriting" id="raqam6">
+            <br><br>
+            <button class="btn btn-outline-info" onclick="f6()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapse7" onclick="a7()">
+            <h1>7-misol</h1>
+          </a>
+        </div>
+        <div id="collapse7" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Matnni kiriting</h3><br>
+            <input type="text" placeholder="matnni kiriting" id="raqam7">
+            <br><br>
+            <button class="btn btn-outline-info" onclick="f7()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapse8" onclick="a8()">
+            <h1>8-misol</h1>
+          </a>
+        </div>
+        <div id="collapse8" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Raqam kiriting</h3><br>
+            <input type="number" placeholder="raqam kiriting" id="son1">
+            <br><br>
+           <button class="btn btn-outline-info" onclick="f8()">natijani ko'rish</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapse9" onclick="a9()">
+            <h1>9-misol</h1>
+
+          </a>
+        </div>
+        <div id="collapse9" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>Matnni kiriting</h3>
+            <input type="text" id="k3" >
+            
+            <br>
+            <br>
+            <button class="btn btn-outline-info" onclick="f9()">natijani ko'rish</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapse10" onclick="a10()">
+            <h1>10-misol</h1>
+
+          </a>
+        </div>
+        <div id="collapse10" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            <h3>inputlarga raqam kiriting</h3>
+            <input type="number" id="ww3" >
+            <input type="number" id="ww4" >
+            
+            <br>
+            <br>
+            <button class="btn btn-outline-info" onclick="f10()">natijani ko'rish</button>
+
+
+          </div>
+        </div>
+      </div>
+     
+
+
+
+  
+ 
+</div>
+
+   
+  </div>
+  <div class="col-3"></div>
+</div> </div>
+
+
+<script src="script.js"></script>
+<script src="alert.js"></script>
+
+</body>
+
+</html>
