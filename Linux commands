@@ -1,0 +1,189 @@
+1.gsettings reset-recursively org.cinnamon  == linux panelini qayta tiklaydi.
+
+2. df -h == qattiq diskda qancha joy borligini ko'rsatadi.
+
+3. ifconfig == serverning ip adresini ko'rsatadi
+
+4. useradd == rootga yangi foydalanuvchi qo'shadi  => useradd username
+
+5. passwd == yordamida yangi  foydalanuvchiga parol qo'shiladi  => passwd username
+
+6. su == yordamida root foydalanuvchisi tanlanadi  =>  su username                !(su==switch user)
+
+7. tty == har bir root foydalanuvchisiga alohida terminal ajratiladi
+buni bilish uchun
+
+tty ishlatiladi
+
+8. whoami == joriy root foydalanuvchisini ko'rsatadi
+
+9. echo == ekranga birar  nima chiqarish uchun ishlatiladi  => echo $PATH
+
+10. set == terminal o'zgaruvchilarini ko'rsatadi => SHELL=/bin/bash
+
+11. clear == terminalni tozalaydi
+
+12. history == ohirgi 500 yoki 1000 ta buyruqni ko'rsatadi
+har bir buyruqning o'z raqami bo'ladi misol uchun 500 inchi buyruq clear bo'lsa
+
+!500 == uni !500 deb chaqirsa bo'ladi va buyruq bajariladi
+har bir root foydalanuvchisiga alohida tarix ochiladi
+bu tarix    .bash_history    faylida saqlanadi
+
+
+
+
+13. cd /root == rootning bosh sahifasiga olib boradi
+
+14. linux da fayl boshida . belgisi bo'lsa bu fayl berkitilgan hisoblanadi,
+ ~ begisi root ning bosh sahifasida turganingizni bildiradi
+
+
+15. ls papkadagi fayllar ro'yxatini ko'rsatadi => ls yoki ls -l yoki ls -al
+ls -a yashirin fayllarni ham ko'rsatadi
+
+ls nafaqat joriy papkani balki boshqa papka fayllarini ham ko'rsatadi
+misol uchun ls /etc
+
+ls -ltr == sort qilib chiqaradi
+ls -ld == papkaning o'zi haqida malumot beradi
+ls /etc -ld == etc papkasi haqida malumot beradi
+ls -i == faylning qaytarilmas raqamini ko'rsatadi
+ls -al f* == bu papkadagi f harfidan boshlangan fayllarni ko'rsatadi 
+
+
+16. man == linux buyruqlari haqida malumot beradi => man ls   yoki == ls --help
+
+17. cat == file ning nimadan tashkil topganini bildiradi => cat index.html
+           yoki bir nechta faylni => cat index.html 1.txt 
+ 
+18. less == file da malumotlar ko'p bo'lsa ishlatiladi => less index.html
+
+19. pwd == foydalanuvchi hozirda turgan papkani ko'rsatadi
+
+20. cd == joriy papkadan boshqa papkaga o'tish => cd Desktop
+
+21. .. == ortga qaytishni bildiradi => cd ..  yoki 2ta ortga qaytish uchun cd ../..
+
+22. touch == bo'sh fayl yaratadi  => touch 1.txt
+ yana faylning qachon yaratilganini o'zgartirsa bo'ladi bunda touch ga  -t qo'shiladi
+
+touch -t 20200715 1.txt === 1.txt 2020 yil 15-iyulda yaratilganligi belgilandi
+
+bu o'zgarishni bilish uchun stat buyrug'i ishlatiladi  => stat 1.txt
+
+23. nano == ham fayl yaratadi ham uning ichiga yozadi
+
+24. > == linuxda faylni boshqa faylga yuborish  =>   cat 1.txt > 2.txt
+
+25. echo $? == oxirgi buyruqning natijasini qaytaradi
+
+26. mkdir == papka yaratadi  => mkdir papka    
+papka qayerda ochilishini ham buyursa bo'ladi  => mkdir /home/Desktop papka
+
+27. cp == fayldan nusxa olish  => cp 1.txt copy.txt
+cp -v  == qaysi fayldan qaysi faylga nusxa olinganini ko'rsatadi
+
+papkadan nusxa olishda agar papka bo'sh bo'lmasa cp -r buyrug'idan foydalaniladi   =>  cp -rv /home/Desktop/test test2
+
+28. mv == faylni boshqa papkaga ko'chirish uchun ishlatladi
+
+mv  == fayl nomini o'zgartirishda ham ishlatiladi  => mv 1.txt 2.txt
+-v cp ga o'xshab mv da ham  ishlatildadi
+
+29. rm == fayl va papkani o'chiradi => rm 1.txt
+rm -f 1.txt == bunda bittada o'chiradi
+papkani o'chirishda  -r qo'shiladi  => rm -r test
+
+30. find == fayllarni xotiradan izlab topadi 
+bunda find keyin qayerdan izlash kerakligi  keyin -name va fayl nomi yoziladi
+ =>  find /home -name '1.txt'
+
+31. cat 1.txt > 2.txt == 2.txtnig malumotlari o'chirildi va unga 1.txt dagi  malumotlar yozildi.
+32. cat 1.txt >> 2.txt == 2.txtnig malumotlari o'chirilmadi va unga 1.txt dagi  malumotlar yozildi.
+
+33. | == metod chaining  => cat 1.txt | grep 2  => | belgisi buyruqlarni ketma-ket bajaradi. bunda 1-inchi cat keyin grep buyrug'i bajariladi
+
+34. sort == sortirovka qiladi  => cat 1.txt | sort
+
+35. grep ==  fayldagi malumotni izlab topadi va o'sha qatorni ekranga chiqaradi  =>  grep 1.txt 7 == 1.txtdagi 7 raqami bor qatorni topadi
+
+36. ; == birdaniga ko'plab buyruq berish imkonini beradi => cat 1.txt ; ls -l ; grep 7 1.txt
+
+37. && == shart buyrug'i => cat 1.txt && ls -l ==  agar cat buyrug'i bajarilsa keyin  ls -l ni bajaradi
+
+38. || == yoki buyrug'i  => cat 1.txt || ls -l
+
+39. seq 1000 > 1.txt  ==  1.txt fayliga 1 dan 1000 gacha bo'lgan raqamlar yozildi
+
+40. more 1.txt
+
+41. less 1.txt
+
+42. head == faylning boshida 10 qator o'qiydi
+
+43. tail == faylning oxiridan 10 qator o'qiydi
+
+44. tail -n 34 1.txt  =>  -n == oxiridan 34 qator o'qi.
+
+45. wc -w 1.txt == fayldagi so'zlar soni 
+
+46. wc -l 1.txt == fayldagi qatorlar soni
+
+47. wc -c 1.txt == fayldagi simvollar soni
+
+48. file == file turini aniqlash uchun ishlatiladi 
+
+                               Fayllarning hajmini kichraytirish
+
+49. which gzip == gzip dasturi qayerda joylashganligini ko'rsatadi
+
+50. gzip 1.txt -c > 1.txt.gz  => bu yerda  -c  compressiya qilib beradi va fayl hajmi kichrayadi
+
+agar  -v dan foydalanilsa hajm  necha foiz necha foiz qisqarganini ko'rsatadi  =>  gzip 1.txt -cv > 1.txt.gz
+
+gzip -l  => gzip -l 1.txt.gz  ====  ham foizni ham nechta fayl borligini ko'rsatadi
+
+agar gzip hech qanday qo'shimcha buyruqsiz yozilsa zip yaratadi va faylni o'chiradi =>  gzip 1.txt
+
+                                 faylni decompressiya qilish usullari
+
+51. gunzip 1.txt  === fayl o'z holiga qaytadi va zip fayl o'chadi
+
+52. gzip -d 1.txt
+
+53. zcat 1.txt.gz > 1.txt
+
+54. less 1.txt.gz > 1.txt
+
+55. bzip2 == gzip dan ko'ra samaraliroq  ya'ni hajm ko'proq qisqaradi.
+
+56. bunzip2 == zip faylni asliga qaytaradi
+
+57. bzcat 1.txt.bz2 > 1.txt
+
+58. zip == zipning gzip va bzip2 dan farqi birinchi zip fayl keyin oddiy fayl yoziladi  => zip 1.txt.zip > 1.txt == zip yaratildi
+
+59. unzip == decompressiya
+
+60. tar -cvf test.tar test == test papkasi test.tar fayliga o'girildi 
+
+61.  tar -czvf test.tar.gz test == test papkasi test.tar fayliga o'girildi va ziplandi
+
+62.  tar -cjvf test.tar.bz2 test == test papkasi test.tar fayliga o'girildi va ziplandi
+
+63. tar -tzvf ==  bunda -t kaliti tar faylidagi papka va fayllarni ko'rsatadi  =>  tar -tzvf test.tar.gz
+
+64.  tar -tjvf ==  bunda -t kaliti tar faylidagi papka va fayllarni ko'rsatadi  =>  tar -tzvf test.tar.bz2
+
+65. tar -xzvf == decompressiya => gzip uchun
+
+66. tar -xjvf == decompressiya => bz2 uchun
+
+
+ 
+
+
+
+
+
