@@ -185,6 +185,7 @@ function f10() {
 
         let num2 = ($('#ww3').val());
         let n3 = ($('#ww4').val());
+        let n;
 
         if (!Number.isNaN(n3) && !Number.isNaN(num2)) {
             $("div.container").append("<table>");
@@ -195,9 +196,13 @@ function f10() {
 
                 for (var j = 0; j < n3; j++) {
                     $("tr").eq(i).append("<td></td>");
-                    $('td').html("java script");
 
 
+                }
+                for(let i=0; i<n3*num2;i++){
+                    n=Math.round(Math.random()*100);
+
+                    $('td').eq(i).html(n);
                 }
 
                 $("table").append("</tr>");
