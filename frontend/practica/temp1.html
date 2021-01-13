@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <style>
+        .span3  {
+           float: left;
+        }
+        .span3 img {
+            width: 50%;
+            height: 220px;
+        }
+
+        body {
+            background-image: url("images/4.jpg");
+            background-size: cover;
+            height: 100vh;
+            font-family: tahoma;
+        }
+
+        .imgwrap img {
+            min-width: 220px;
+        }
+
+        .imgwrap {
+            min-height: 220px;
+            width: 220px;
+            float: left;
+            background: #ffff00;
+            border-radius: 110px;
+            overflow: hidden;
+        }
+
+        .contentwrap {
+            border-radius: 110px;
+            overflow: hidden;
+            width: 220px;
+            height: 220px;
+            background: white;
+            border: 4px solid white;
+            z-index: 0;
+            position: relative;
+            transition: width 1s, margin-left 1s, z-index1, 5s;
+        }
+
+        .activeTab.circle2 .contentwrap {
+            margin-left: -240px;
+        }
+
+        .activeTab.circle3 .contentwrap {
+            margin-left: -480px;
+        }
+
+        .activeTab.circle4 .contentwrap {
+            margin-left: -720px;
+        }
+
+        .activeTab .contentwrap {
+            width: 940px;
+            z-index: 11;
+        }
+
+        .textwrap {
+            margin-left: 230px;
+            padding-top: 40px;
+            margin-right: 59px;
+        }
+
+        .outerwrap {
+            margin-top: 200px;
+        }
+
+        .closebtn {
+            float: right;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+            background: #ccc;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            margin-top: 90px;
+            margin-right: 10px;
+
+        }
+
+        .incnt {
+            width: 940px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row outerwrap">
+            <div class="span3 span5 circle1">
+                <div class="incircle">
+                    <div class="contentwrap">
+                        <div class="incnt">
+                            <div class="imgwrap">
+                                <img src="images/1.jpg" alt="">
+                            </div>
+                            <div class="closebtn">x</div>
+                            <div class="textwrap">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis esse corrupti
+                                    tempore cumque rem sequi labore blanditiis, explicabo maxime aperiam error vitae
+                                    iure architecto fugiat id non voluptatem corporis fuga alias illum expedita.
+                                    Veritatis nemo fugiat labore possimus sint porro consequuntur et quos, in
+                                    reiciendis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis qui officia,
+                                    iure dignissimos illo accusantium vitae, quam soluta dolore at possimus modi! Eum
+                                    sint nisi animi in non rem itaque sunt, totam optio qui ad, quos a. Vel, aliquam
+                                    accusamus quisquam eos inventore voluptas deserunt! Temporibus animi vitae officia!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span3 span6 circle2">
+                <div class="incircle">
+                    <div class="contentwrap">
+                        <div class="incnt">
+                            <div class="imgwrap">
+                                <img class="a" src="images/8.jpg" alt="">
+                            </div>
+                            <div class="closebtn">X</div>
+                            <div class="textwrap">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis esse corrupti
+                                    tempore cumque rem sequi labore blanditiis, explicabo maxime aperiam error vitae
+                                    iure architecto fugiat id non voluptatem corporis fuga alias illum expedita.
+                                    Veritatis nemo fugiat labore possimus sint porro consequuntur et quos, in
+                                    reiciendis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis qui officia,
+                                    iure dignissimos illo accusantium vitae, quam soluta dolore at possimus modi! Eum
+                                    sint nisi animi in non rem itaque sunt, totam optio qui ad, quos a. Vel, aliquam
+                                    accusamus quisquam eos inventore voluptas deserunt! Temporibus animi vitae officia!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span3 span7 circle3">
+                <div class="incircle">
+                    <div class="contentwrap">
+                        <div class="incnt">
+                            <div class="imgwrap">
+                                <img src="images/4.jpg" alt="">
+                            </div>
+                            <div class="closebtn">x</div>
+                            <div class="textwrap">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis esse corrupti
+                                    tempore cumque rem sequi labore blanditiis, explicabo maxime aperiam error vitae
+                                    iure architecto fugiat id non voluptatem corporis fuga alias illum expedita.
+                                    Veritatis nemo fugiat labore possimus sint porro consequuntur et quos, in
+                                    reiciendis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis qui officia,
+                                    iure dignissimos illo accusantium vitae, quam soluta dolore at possimus modi! Eum
+                                    sint nisi animi in non rem itaque sunt, totam optio qui ad, quos a. Vel, aliquam
+                                    accusamus quisquam eos inventore voluptas deserunt! Temporibus animi vitae officia!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span3 span8 circle4">
+                <div class="incircle">
+                    <div class="contentwrap">
+                        <div class="incnt">
+                            <div class="imgwrap">
+                                <img src="images/5.jpg" alt="">
+                            </div>
+                            <div class="closebtn">x</div>
+                            <div class="textwrap">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis esse corrupti
+                                    tempore cumque rem sequi labore blanditiis, explicabo maxime aperiam error vitae
+                                    iure architecto fugiat id non voluptatem corporis fuga alias illum expedita.
+                                    Veritatis nemo fugiat labore possimus sint porro consequuntur et quos, in
+                                    reiciendis.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis qui officia,
+                                    iure dignissimos illo accusantium vitae, quam soluta dolore at possimus modi! Eum
+                                    sint nisi animi in non rem itaque sunt, totam optio qui ad, quos a. Vel, aliquam
+                                    accusamus quisquam eos inventore voluptas deserunt! Temporibus animi vitae officia!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".outerwrap .span5").click(function () {
+                let image=$(".outerwrap .span5 img").attr("src");
+                $(".outerwrap .span3").removeClass("activeTab");
+                $(this).addClass("activeTab");
+                $("body").css("background-image",'url('+image+')');
+            });
+            $(".outerwrap .span6").click(function () {
+                let image=$(".outerwrap .span6 img").attr("src");
+                $(".outerwrap .span3").removeClass("activeTab");
+                $(this).addClass("activeTab");
+                $("body").css("background-image",'url('+image+')');
+            });
+            $(".outerwrap .span7").click(function () {
+                let image=$(".outerwrap .span7 img").attr("src");
+                $(".outerwrap .span3").removeClass("activeTab");
+                $(this).addClass("activeTab");
+                $("body").css("background-image",'url('+image+')');
+            });
+            $(".outerwrap .span8").click(function () {
+                let image=$(".outerwrap .span8 img").attr("src");
+                $(".outerwrap .span3").removeClass("activeTab");
+                $(this).addClass("activeTab");
+                $("body").css("background-image",'url('+image+')');
+            })
+
+            
+
+
+
+            $(".closebtn").click(function (event) {
+                event.stopPropagation();
+                $(".outerwrap .span3").removeClass("activeTab");
+
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

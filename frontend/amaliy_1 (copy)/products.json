@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Nahorgi osh",
+      "price": 120,
+      "description": "Erta nahorda mazza qilib tanovvul qilishingiz mumkin bo'lgan daxshat osh!",
+      "type": "eat"
+    },
+    {
+      "name": "Bread Basket",
+      "price": 230,
+      "description": "Assortment of fresh baked fruit breads and muffins 5.50",
+      "type": "drink"
+    },
+    {
+      "type": "drink",
+      "price": 100,
+      "name": "Honey Almond Granola with Fruits",
+      "description": "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00"
+    },
+    {
+      "type": "eat",
+      "price": 140,
+      "name": "Belgian Waffle",
+      "description": "Vanilla flavored batter with malted flour 7.50"
+    },
+    {
+      "type": "drink",
+      "price": 10,
+      "name": "Scrambled eggs",
+      "description": "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50"
+    },
+    {
+      "type": "eat",
+      "price": 500,
+      "name": "Blueberry Pancakes",
+      "description": "With syrup, butter and lots of berries 8.50"
+    }
+  ]

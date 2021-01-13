@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaliy_3</title>
+    <link rel="stylesheet" href="basic/bootstrap.min.css">
+  <script src="basic/jquery-3.5.1.min.js"></script>
+  <script src="basic/popper.min.js"></script>
+  <script src="basic/bootstrap.min.js"></script>
+    <style>
+        button {
+            position: fixed;
+        }
+
+
+        .englishlang {
+            color: darkmagenta;
+            border: 2px solid darkmagenta;
+
+        }
+
+        .container .lang :hover {
+            border: 2px dotted darkorange;
+
+        }
+
+        .lang {
+            display: inline-block;
+            width: 160px;
+            height: 140px;
+            border: 1px solid blueviolet;
+            background-color: #e3e3e3;
+            margin: 30px;
+            border: 5px solid forestgreen;
+
+
+        }
+
+        body {
+            background-image: url("maxresdefault.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .p {
+            margin-top: 50px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto">
+
+        <h3 style="display: none;"></h3>
+    </div>
+
+    <button class="btn btn-info  btn-lg mt-5 mb-5" id="btn">yangi so'zlar </button>
+    <div class="container text-center">
+
+    </div>
+
+
+
+    <script>
+
+        $(document).ready(function (z) {
+
+            z('.p').parent()
+
+            let massiv2 = [];
+            let massiv = ['olma', 'kitob', 'non', 'suv', 'pichoq',
+                'daftar', 'ruchka', 'choy', 'bog\'cha', 'maktab', 'dada', 'ona',
+                'aka', 'singil', 'katta', 'kichik', 'gul', 'yo\'l', 'sumka', 'oq',
+                'qora', 'sariq', 'ko\'k', 'qizil', 'o\'qituvchi', 'do\'st', 'pul',
+                'oyoq', 'qo\'l', 'ko\'z', 'ko\'rmoq', 'yoz', 'kuz', 'qish', 'bahor',
+                'yil', 'oy', 'kun', 'vaqt', 'fil', 'quyon', 'kursi', 'choynak', 'baliq',
+                'barmoq', 'daraxt', 'qimmat', 'arzon', 'boy', 'jamoa'
+            ]
+            let english = ['apple', 'book', 'bread', 'water', 'knife',
+                'notebook', 'pen', 'tea', 'kindergarten', 'school', 'father', 'mother',
+                'brother', 'sister', 'big', 'little', 'flower', 'road', 'bag', 'white',
+                'black', 'yellow', 'blue', 'red', 'teacher', 'friend', 'money',
+                'foot', 'leg', 'eye', 'watch', 'summer', 'autumn', 'winter', 'spring',
+                'year', 'month', 'day', 'time', 'elephant', 'rabbit', 'chair', 'teapot', 'fish',
+                'finger', 'tree', 'expensive', 'cheap', 'rich', 'group'];
+
+
+            function uniqueArray4(a) {
+                return [...new Set(a)];
+            }
+            function arr() {
+                let b = true;
+                while (b) {
+                    let ssa = Math.round(Math.random() * (massiv.length - 1));
+                    massiv2.push(massiv[ssa]);
+                    if (massiv2.length < 21) {
+                        let q = uniqueArray4(massiv2);
+                        massiv2 = q;
+                    } else {
+                        massiv2.pop();
+                        b = false;
+                    }
+
+                }
+
+            }
+            z('#btn').click(function () {
+                z('.container').empty();
+                arr();
+                z('h3').html('3. Boshlang’ich sinf o’quvchilari uchun ingliz tilidan kartochkalar yordamida so’zlarni yodlash interaktiv o’yini tuzilsin. Dasturda boshlang’ich 50 ta so’zdan 20 ta kartochka tasodifiy yasalsin. Har bir kartochkada so’zlarning o’zbek yoki rus tilidagi tarjimasi yozilsin, kartochka ustiga bosilganda kartochka aylangan (yoki ochilgan) holda ushbu so’zning tarjima varianti ko’rsatilsin.');
+                z('h3').slideDown(1200);
+                for (let index = 0; index < massiv2.length; index++) {
+
+
+                    z('body .container').append("<div class='lang'><p class='p text-danger'>" + massiv2[index] + "</p></div>");
+
+                    if ((index + 1) % 5 == 0) {
+                        z('body .container').append("<br>");
+                    }
+
+                }
+
+                z('.container .lang').click(function () {
+                    var w = z(this);
+
+                    let id = z(this).text();
+
+                    if (massiv.includes(id)) {
+
+                        let fggg = massiv.indexOf(id);
+
+
+                        setTimeout(function () {
+
+                            z(w).html("<p class='p englishlang'>" + english[fggg] + "</p>");
+
+
+                        }, 700);
+
+                    }
+                    if (english.includes(id)) {
+
+                        let fggg2 = english.indexOf(id);
+
+
+                        setTimeout(function () {
+
+                            z(w).html("<p class='p englishlang'>" + massiv[fggg2] + "</p>");
+
+
+                        }, 600);
+
+                    }
+
+                    z(this).hide(1000);
+                    z(this).show(1200);
+
+
+
+
+
+
+
+
+                })
+
+
+                massiv2 = [];
+
+            });
+
+        })
+    </script>
+</body>
+
+</html>
