@@ -180,6 +180,7 @@ agar gzip hech qanday qo'shimcha buyruqsiz yozilsa zip yaratadi va faylni o'chir
 
 66. tar -xjvf == decompressiya => bz2 uchun
 
+67. cat .ssh/id_rsa.pub  ==  public keyni aniqlaydi
 
  
 
